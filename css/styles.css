@@ -168,7 +168,16 @@ img {
     margin: 0;
 }
 
-@media (min-width: 1024px) { 
+@media (min-width: 768px) { 
+    .header-title {
+        font-size: 8rem;
+    }
+    .chocolate {
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 1600px) { 
     .header-title {
         font-size: 10rem;
         line-height: 1;
@@ -388,12 +397,13 @@ img {
 }
 
 .product img {
-    height: 30rem;
+    height: 25rem;
     padding: 1.5rem;
 }
 
 @media (min-width: 1024px) {
     .product img {
+        height: 30rem;
         padding: 2.5rem;
     }    
 }
@@ -421,7 +431,7 @@ img {
     font-weight: 900;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1600px) {
     .product-title {
         font-size: 2.4rem;
     }
