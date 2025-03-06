@@ -1,7 +1,8 @@
 :root {
     --gray: #3B3B3B;
-    --black: #1F1E1E;
+    --black: #312e2b;
     --lightGray: #f7f7f7;
+    --white: #fff;
     --pink: #FEC5E6;
     --chocolateLight: #b46e4b;
     --chocolateLighter: #5B1F07;
@@ -140,6 +141,7 @@ img {
         padding-top: var(--spacing);
         width: 50%;
         text-align: left;
+        gap: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -249,7 +251,7 @@ img {
 
 .icon {
     text-align: center;
-    margin-bottom: calc( var(--spacing) / 2) ;
+    margin-bottom: calc( var(--spacing) / 1) ;
 }
 
 .icon:last-of-type {
@@ -263,7 +265,7 @@ img {
 }
 
 .icon img {
-    width: 5rem;
+    width: 10rem;
     margin: 0 auto;
 }
 
@@ -278,16 +280,24 @@ img {
     font-weight: 500;
 }
 
+@media (min-width: 768px) { 
+    .icon p {
+        font-size: 2.5rem;
+    }
+}
+
 .about-us {
     background-position: right;
     background-repeat: repeat, no-repeat;
     background-size: 100%, 110rem;
-    background-image: linear-gradient( to top, transparent 50%, var(--pink) 0% ), url(../img/box1.png);
+    height: 100rem;
+    background-image: linear-gradient( to top, transparent 50%, var(--pink) 0% );
 }
 
 @media (min-width: 1024px) { 
     .about-us {
-        background-image: linear-gradient( to left, transparent 50%, var(--pink) 0% ), url(../img/box1.png);
+        background-image: linear-gradient( to left, transparent 50%, var(--pink) 0% );
+        height: 50rem;  
     }
 }
 
@@ -295,6 +305,16 @@ img {
     .about-us {
         background-size: 100%, 210rem;
     }
+}
+
+.about-us-img {
+    height: 50rem;
+    display: flex;
+}
+
+.about-us-img img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .grid {
@@ -310,8 +330,6 @@ img {
         grid-template-rows: unset;
         row-gap: unset;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 4rem;
-        padding: calc( var(--spacing ) * 2) 0;
     }
 }
 
@@ -325,7 +343,13 @@ img {
 
 @media (min-width: 1024px) { 
     .about-us-text {
-        padding-bottom: 0;
+        padding: calc( var(--spacing ) * 1) 0;
+    }
+}
+
+@media (min-width: 1600px) { 
+    .about-us-text {
+        padding: calc( var(--spacing ) * 2) 0;
     }
 }
 
@@ -335,6 +359,7 @@ img {
 
 .about-us-text p {    
     font-size: 2.5rem;
+    padding: 0 3rem;
     font-weight: 500;
     line-height: 2;
 }
@@ -480,4 +505,47 @@ img {
     font-size: 2rem;
     font-weight: 900;
     border: none;
+}
+
+.footer {
+    background-color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .footer {
+        height: 9rem;
+    }
+}
+
+.footer-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-img {
+    width: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer-img {
+        margin: 0 1rem;
+        width: 3.5rem;
+    }
+}
+
+.footer-description {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .footer-description {
+        font-size: 2.1rem;
+    }
 }
