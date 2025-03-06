@@ -26,11 +26,13 @@ git clone https://github.com/A4GOD-AMHG/SweetHeart-Chocolates-HTML-CSS.git
 
 ## Screenshots
 
-<div align="center" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 30px 0;">
-  <img src="./screenshots/mobile.png" alt="Mobile" style="width: 250px; margin: 10px;"/>
-  <img src="./screenshots/ipad.png" alt="iPad" style="width: 400px; margin: 10px;"/>
-  <img src="./screenshots/desktop.png" alt="Desktop1" style="width: 600px; margin: 10px; max-width: 100%;"/>
-  <img src="./screenshots/desktop2.png" alt="Desktop2" style="width: 600px; margin: 10px; max-width: 100%;"/>
-  <img src="./screenshots/desktop3.png" alt="Desktop3" style="width: 600px; margin: 10px; max-width: 100%;"/>
-  <img src="./screenshots/desktop4.png" alt="Desktop4" style="width: 600px; margin: 10px; max-width: 100%;"/>
-</div>
+![Mobile](screenshots/mobile.png)
+![Ipad](screenshots/ipad.png)
+![Desktop 1](screenshots/desktop.png)
+![Desktop 2](screenshots/desktop2.png)
+![Desktop 3](screenshots/desktop3.png)
+![Desktop 4](screenshots/desktop4.png)
+
+## Author
+
+- Alexis Manuel Hurtado García (<https://github.com/A4GOD-AMHG>)
